@@ -1,7 +1,7 @@
 ### Add your supplemental ignored files below this line
-### Added by .... YYYY-MM-DD
+### Added by .... 2026-08-05
 
-
+phase-1/evidence/
 
 
 ### Force ignore the .idea folder and all its contents
@@ -10,7 +10,6 @@
 .idea/
 .idea/*
 .idea/**
-
 
 ### Composer template
 composer.phar

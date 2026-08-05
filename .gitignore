@@ -5,7 +5,7 @@
 
 
 ### Force ignore the .idea folder and all its contents
-### Added by .... YYYY-MM-DD
+### Added by Samuel Roberts 2026-08-05
 .idea
 .idea/
 .idea/*

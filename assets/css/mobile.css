@@ -54,11 +54,12 @@ header h1 {
 main {
     display: flex;
     flex-direction: column;
+    flex: 1;
     max-width: 960px;
     margin: 0 auto;
 }
 article, aside {
-    padding: 1em;;
+    padding: 1em;
 }
 .article1 {
     background-color: rgb(96, 96, 96);

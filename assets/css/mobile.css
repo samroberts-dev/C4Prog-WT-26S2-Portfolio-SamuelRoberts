@@ -62,8 +62,15 @@ main {
     width: 100%;
     margin: 0 auto;
 }
-article, aside {
+
+article {
+    width: 100%;
+    box-sizing: border-box;
     padding: 1em;
+}
+
+.aside-main {
+    display: none;
 }
 .article1 {
     background-color: rgb(96, 96, 96);
@@ -77,9 +84,7 @@ article, aside {
 .article4 {
     background-color: rgb(96, 96, 96);
 }
-.aside-main {
-    display: none;
-}
+
 footer {
     display: flex;
     justify-content: space-between;

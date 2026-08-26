@@ -1,239 +1,33 @@
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    background-color: #757575;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 80px;
-    box-sizing: border-box;
-    padding: 0 15px;
-    z-index: 10;
-}
-
-header img {
-    width: 64px;
-    height: 64px;
-}
-
-header h1 {
-    margin: 0 0 0 15px;
-    font-size: 1.5rem;
-}
-
 .menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border: none;
-    background: transparent;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  border: none;
+  background: none;
 }
 
 .menu-line {
-    display: block;
-    width: 25px;
+    width: 28px;
     height: 3px;
-    background-color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-line:last-child {
-    margin-bottom: 0;
-}
-
-#menu-items {
-    display: none;
+    background: black;
 }
 
 .aside-main {
+  display: none;
+}
+
+.top-nav {
     display: none;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-article {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 1em;
-}
-
-.article1 {
-    background-color: rgb(96, 96, 96);
-}
-
-.article2 {
-    background-color: rgb(214, 214, 214);
-}
-
-.article3 {
-    background-color: rgb(214, 214, 214);
-}
-
-.article4 {
-    background-color: rgb(96, 96, 96);
-}
-
 footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
+  background-color: #c5edfc;
 }
-
-footer li {
-    list-style: none;
-}
-
-footer li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-@media screen and (min-width: 600px) {
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        width: 100%;
-        height: 80px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-    .top-nav {
-        position: sticky;
-        top: 80px;
-        z-index: 9;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    header img {
-        width: 64px;
-        height: 64px;
-    }
-
-    header h1 {
-        margin: 0 0 0 15px;
-        font-size: 1.5rem;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    #menu-items {
-        display: flex;
-        align-items: center;
-        gap: 2em;
-        width: 100%;
-        margin: 0;
-        padding: 0.5em 1em;
-        box-sizing: border-box;
-        list-style: none;
-        background-color: #757575;
-    }
-
-    #menu-items li {
-        list-style: none;
-    }
-
-    #menu-items li a {
-        display: block;
-        color: #000;
-        text-decoration: none;
-        padding: 0.5em 0;
-    }
-
-    main {
-        display: grid;
-        grid-column: 1 / 3;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-    }
-
-    .aside-main {
-        display: block;
-        grid-column: 3;
-        grid-row: 3;
-        background-color: rgb(180, 180, 180);
-        padding: 1em;
-        box-sizing: border-box;
-    }
-
-    .article1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .article2 {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    .article3 {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .article4 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-
-    footer {
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #000;
-        color: #fff;
-    }
-
-    footer p {
-        margin: 0;
-    }
-
-    footer ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    footer li {
-        list-style: none;
-    }
-
-    footer li a {
-        color: #fff;
-        text-decoration: none;
-    }
+header {
+  background-color: #c5edfc;
+  display: flex;
+  gap: 10px;
 }

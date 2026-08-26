@@ -33,3 +33,27 @@ footer {
   position: sticky;
   top: 0;
 }
+
+@media (min-width:1024px) {
+  .site-header {
+    height: auto;
+  } 
+  .menu {
+    display: none;
+  } 
+  .top-nav{
+    display: block;
+  }
+  .top-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .aside-main {
+    display: block;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}

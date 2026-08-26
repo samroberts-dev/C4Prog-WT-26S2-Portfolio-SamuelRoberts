@@ -19,6 +19,12 @@
   display: none;
 }
 
+main article {
+    border: 3px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
 .top-nav {
     display: none;
 }
@@ -32,22 +38,26 @@ footer {
   gap: 10px;
   position: sticky;
   top: 0;
+
 }
 
 @media (min-width:1024px) {
-  .site-header {
-    height: auto;
-  } 
   .menu {
     display: none;
   } 
   .top-nav{
     display: block;
+    top: 80px;
   }
   .top-nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
+    background-color: #c5edfc;
+    margin: 0;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 2px solid black;
   }
   .aside-main {
     display: block;
@@ -56,4 +66,23 @@ footer {
     max-width: 960px;
     margin: 0 auto;
   }
+  main aside {
+    border: 3px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .site-header {
+    background-color: #c5edfc;
+    display: flex;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    border: 3px solid #000;
+  }
+  img {
+    margin: 10px;
+    border-radius: 14px;
+  }
+  
+
 }

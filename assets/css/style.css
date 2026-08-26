@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  top: 16px;
+  top: 3.5%;
   right: 16px;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,10 @@
 footer {
   background-color: #c5edfc;
 }
-header {
+.site-header {
   background-color: #c5edfc;
   display: flex;
   gap: 10px;
+  position: sticky;
+  top: 0;
 }

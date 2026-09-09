@@ -66,6 +66,30 @@ footer {
     grid-area: aside;
     margin-bottom: 0;
   }
+
+  .aside-main section {
+    background-color: #d9d9d9;
+    margin-bottom: 15px;
+  }
+
+  .aside-main section h2 {
+    background-color: #6b6b6b;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .aside-main section p {
+    padding: 0 10px;
+  }
+
+  .aside-main section footer {
+    background-color: #6b6b6b;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0;
+  }
+
   main {
     max-width: 960px;
     margin: 0 auto;

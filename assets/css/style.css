@@ -48,6 +48,8 @@ footer {
   .top-nav{
     display: block;
     top: 80px;
+    position: sticky;
+    justify-content: flex-end;
   }
   .top-nav ul {
     display: flex;
@@ -61,10 +63,18 @@ footer {
   }
   .aside-main {
     display: block;
+    grid-area: aside;
+    margin-bottom: 0;
   }
   main {
     max-width: 960px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-template-areas: "a1 a2 aside" "a3 a4 aside";
+    gap: 20px;
+
+
   }
   main aside {
     border: 3px solid #000;
@@ -83,6 +93,10 @@ footer {
     margin: 10px;
     border-radius: 14px;
   }
+  .article1 { grid-area: a1; margin-bottom: 0; }
+  .article2 { grid-area: a2; margin-bottom: 0; }
+  .article3 { grid-area: a3; margin-bottom: 0; }
+  .article4 { grid-area: a4; margin-bottom: 0; }
   
 
 }

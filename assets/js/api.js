@@ -1,4 +1,3 @@
-
 const countryFlag = document.getElementById("country-flag");
 const dadJokes = document.getElementById("dad-jokes");
 const apiInput = document.getElementById("api-value");

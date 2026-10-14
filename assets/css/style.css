@@ -1,3 +1,4 @@
+
 .menu {
   position: fixed;
   top: 3.5%;
@@ -40,6 +41,46 @@ footer {
   position: sticky;
   top: 0;
 
+}
+
+#api-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#api-form section {
+    background-color: #F4F0E6;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.api-selection label {
+    display: inline-block;
+    margin: 5px;
+}
+
+.api-input input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.api-input button {
+    background-color: #1D2A4D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.api-input button:hover {
+    background-color: #D99A3D;
+}
+
+.api-results {
+    min-height: 100px;
+    overflow-wrap: anywhere;
 }
 
 @media (min-width:1024px) {

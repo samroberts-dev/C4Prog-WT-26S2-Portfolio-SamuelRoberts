@@ -127,6 +127,37 @@
                 </p>
                 <p>Content is provided with permission from APC Magazine (TechRadar.com) for the purposes of education and training. Content is Copyright 2007 APC Magazine.</p>
             </div>
+            <form id="api-form">
+                <h2>Ninja API App</h2>
+
+                <section class="api-selection">
+                    <h3>Pick from the following APIs</h3>
+
+                    <label for="country-flag">
+                        <input type="checkbox" id="country-flag" name="api">
+                        Country Flag
+                    </label>
+
+                    <label for="dad-jokes">
+                        <input type="checkbox" id="dad-jokes" name="api">
+                        Dad Jokes
+                    </label>
+                </section>
+
+                <section class="api-input">
+                    <label for="api-value">Enter a value:</label>
+                    <input type="text" id="api-value"
+                        name="api-value"
+                        placeholder="Enter a country or number of jokes">
+
+                    <button type="submit">Get Response</button>
+                </section>
+
+                <section class="api-results">
+                    <h3>Here are the results!</h3>
+                    <div id="api-response" aria-live="polite"></div>
+                </section>
+            </form>
         </article>
 
         <article class="article4">

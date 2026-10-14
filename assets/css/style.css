@@ -48,7 +48,9 @@ footer {
     margin-top: 20px;
 }
 
-#api-form section {
+#api-form section,
+#api-form .api-input,
+#api-form .api-results {
     background-color: #F4F0E6;
     padding: 15px;
     margin-bottom: 15px;

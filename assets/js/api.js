@@ -1,8 +1,11 @@
+/* jshint esversion: 8, browser: true */
+
 const countryFlag = document.getElementById("country-flag");
 const dadJokes = document.getElementById("dad-jokes");
 const apiInput = document.getElementById("api-value");
 const apiResponse = document.getElementById("api-response");
 const apiForm = document.getElementById("api-form");
+const API_KEY="1yvsBE1tjX3oPjzW0mn6jteUTTmolv9zfHb9qSmR";
 
 countryFlag.addEventListener("change", () => {
     if (countryFlag.checked) {
@@ -23,9 +26,11 @@ dadJokes.addEventListener("change", () => {
     apiInput.value = "";
     apiResponse.textContent = "";
     apiInput.disabled = dadJokes.checked;
-    apiInput.placeholder = dadJokes.checked
-        ? "No input required"
-        : "Enter a country code (e.g. AU)";
+    if (dadJokes.checked) {
+        apiInput.placeholder = "No input required";
+    } else {
+        apiInput.placeholder = "Enter a country code (e.g. AU)";
+    }
 });
 
 apiForm.addEventListener("submit", async (event) => {

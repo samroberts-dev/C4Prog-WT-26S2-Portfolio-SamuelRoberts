@@ -75,9 +75,21 @@ apiForm.addEventListener("submit", async (event) => {
 
         if (countryFlag.checked) {
             const flag = document.createElement("img");
-            flag.src = data.rectangle_image_url;
             flag.alt = "Country flag";
-            apiResponse.appendChild(flag);
+
+            if (!data.rectangle_image_url) {
+                apiResponse.textContent = "No valid flag was found for this country."
+            }
+
+            flag.onload = () => {
+                apiResponse.appendChild(flag);
+            };
+
+            flag.onerror = () => {
+                apiResponse.textContent = "Invalid country code."
+            }
+
+            flag.src = data.rectangle_image_url;
         } else {
             data.forEach(item => {
                 const paragraph = document.createElement("p");

@@ -15,7 +15,7 @@
           <p class="mt-2 text-sm text-slate-300">Samuel Roberts</p>
         </div>
       </div>
-      <nav class="mx-auto mt-6 max-w-6xl border-t border-slate-700 pt-5" aria-label="Main navigation">
+      <nav class="translate-x-100 mx-auto mt-6 max-w-6xl border-t border-slate-700 pt-5" aria-label="Main navigation">
         <ul class="flex flex-wrap gap-2">
           <li><a class="block rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="./index.html" aria-current="page">Home</a></li>
           <li><a class="block rounded-lg px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-slate-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="./phase-1/index.html">Phase 1</a></li>
@@ -24,21 +24,45 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <article>
-        <header>
-          <h2 class="text-xl font-bold text-gray-500">Certificate IV in IT (Programming)</h2>
-          <p>Web Technologies Portfolio as implemented by YOUR NAME</p>
+    <main class="mx-auto w-full max-w-6xl px-6 py-12">
+      <article aria-labelledby="dashboard-heading">
+        <header class="mb-8">
+          <h2 id="dashboard-heading" class="text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl">Certificate IV in IT (Programming)</h2>
+          <p class="mt-3 leading-relaxed text-slate-600">Web Technologies Portfolio as implemented by Samuel Roberts.</p>
+          <p class="mt-2 text-slate-600">Explore the three phases below to view my work in HTML, CSS, JavaScript and Tailwind CSS.</p>
         </header>
-        <section>
-          <a href="phase-1">Phase 1</a>
-        </section>
-        <section>
-          <a href="phase-2">Phase 2</a>
-        </section>
-        <section>
-          <a href="phase-3">Phase 3</a>
-        </section>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <section class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm" aria-labelledby="phase-1-heading">
+            <header class="bg-slate-100 px-6 py-5">
+              <p class="text-sm font-semibold text-slate-500">Phase 1</p>
+              <h3 id="phase-1-heading" class="mt-1 text-xl font-bold text-slate-950">HTML &amp; CSS</h3>
+            </header>
+            <p class="flex-1 px-6 py-5 leading-relaxed text-slate-600">A collection of IT stories presented using semantic HTML, CSS styling and page layout.</p>
+            <footer class="px-6 pb-6">
+              <a class="inline-block rounded-lg bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-950" href="./phase-1/index.html">View Phase 1</a>
+            </footer>
+          </section>
+          <section class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm" aria-labelledby="phase-2-heading">
+            <header class="bg-slate-100 px-6 py-5">
+              <p class="text-sm font-semibold text-slate-500">Phase 2</p>
+              <h3 id="phase-2-heading" class="mt-1 text-xl font-bold text-slate-950">JavaScript &amp; APIs</h3>
+            </header>
+            <p class="flex-1 px-6 py-5 leading-relaxed text-slate-600">An extension of Phase 1 with interactive forms for requesting country flags and dad jokes from APIs.</p>
+            <footer class="px-6 pb-6">
+              <a class="inline-block rounded-lg bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-950" href="./phase-2/index.html">View Phase 2</a>
+            </footer>
+          </section>
+          <section class="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm" aria-labelledby="phase-3-heading">
+            <header class="bg-slate-100 px-6 py-5">
+              <p class="text-sm font-semibold text-slate-500">Phase 3</p>
+              <h3 id="phase-3-heading" class="mt-1 text-xl font-bold text-slate-950">Tailwind CSS</h3>
+            </header>
+            <p class="flex-1 px-6 py-5 leading-relaxed text-slate-600">The final portfolio phase focuses on building a responsive dashboard with Tailwind CSS and linking all phases together.</p>
+            <footer class="px-6 pb-6">
+              <a class="inline-block rounded-lg bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-950" href="./phase-3/index.html">View Phase 3</a>
+            </footer>
+          </section>
+        </div>
       </article>
     </main>
     <footer class="bg-slate-950 px-6 py-8 text-white">
